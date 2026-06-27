@@ -16,10 +16,6 @@ execute:
   freeze: true           # only re-run when you explicitly render this page
   warning: false
 
-# -- Citation demo --
-bibliography: references.bib   # point this at your actual .bib file
-csl: ecology.csl               # any CSL style; swap freely
-
 # -- Lightbox for zoomable images --
 lightbox: true
 ---
