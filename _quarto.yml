@@ -10,6 +10,11 @@ website:
         text: Home
       - href: Lab-notebooks/index.qmd
         text: Lab Notebooks
+  sidebar:
+    contents:
+      - index.qmd
+      - section: "Lab Notebooks"
+        contents: lab-notebooks/*.qmd
 
 format:
   html:

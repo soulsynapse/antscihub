@@ -3,3 +3,5 @@ title: "Lab Notebooks"
 ---
 
 Lab notebooks and field notes.
+
+Trying out a few edits to see how this goes!
