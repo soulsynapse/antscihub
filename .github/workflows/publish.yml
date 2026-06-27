@@ -30,8 +30,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Jupyter
-        run: pip install jupyter nbformat nbclient
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Render
         run: quarto render
