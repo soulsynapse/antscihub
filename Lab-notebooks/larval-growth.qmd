@@ -1,0 +1,316 @@
+---
+title: "Larval Growth & Caste Determination"
+subtitle: "Micronest time-lapse experiment"
+author: "Kendrick"
+date: last-modified
+date-format: "YYYY-MM-DD"
+
+# -- Page behavior --
+toc: true
+toc-depth: 3
+number-sections: true
+code-fold: true          # all code chunks collapsed by default; reader can expand
+code-tools: true         # adds a </> button to show/hide all code at once
+fig-align: center
+execute:
+  freeze: true           # only re-run when you explicitly render this page
+  warning: false
+
+# -- Citation demo --
+bibliography: references.bib   # point this at your actual .bib file
+csl: ecology.csl               # any CSL style; swap freely
+
+# -- Lightbox for zoomable images --
+lightbox: true
+---
+
+<!-- ============================================================
+     This file is a feature showcase, not real content.
+     Replace placeholder text/code with your actual work.
+     ============================================================ -->
+
+::: {.callout-note collapse="true"}
+## Reproducibility Info
+**Last rendered:** {{< meta date >}} ·
+**Source:** [`larval-growth.qmd`](https://github.com/YOUR_ORG/YOUR_REPO/blob/main/larval-growth.qmd) ·
+**Freeze status:** outputs frozen at last local render
+:::
+
+
+::: {.panel-tabset}
+
+## Overview
+
+### Background
+
+Write your project motivation here. Quarto's citation system uses standard
+BibTeX — you cite inline with `[@key]` and the bibliography renders
+automatically. For example: worker-larva interactions mediate caste
+determination through nutritional and pheromonal signals [@linksvayer2011;
+@wheeler1986].
+
+### Experimental Design
+
+Quarto renders Mermaid diagrams natively — no external tool, no image export:
+
+```{mermaid}
+%%| label: fig-design
+%%| fig-cap: "Experimental design: 128 micronests, queenright vs. queenless."
+%%| fig-width: 6
+
+flowchart LR
+    A[Source colonies<br/>n = 8] --> B{Random assignment}
+    B --> C[Queenright<br/>64 micronests]
+    B --> D[Queenless<br/>64 micronests]
+    C --> E[1 larva + 5 workers<br/>per micronest]
+    D --> E
+    E --> F[Time-lapse imaging<br/>1 photo/hr]
+```
+
+You can cross-reference this anywhere in the document with `@fig-design`.
+See @fig-design for the full layout.
+
+
+### Key Parameters
+
+Quarto tables support cross-referencing and caption formatting:
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Micronests | 128 | 64 per treatment |
+| Workers per nest | 5 | from source colony |
+| Larvae per nest | 1 | 1st instar at start |
+| Imaging interval | 1 hr | rpicam-still |
+| Duration | 30 days | or until eclosion |
+
+: Experimental parameters for the micronest growth assay. {#tbl-params}
+
+Reference it elsewhere: see @tbl-params for the full parameter set.
+
+
+## Data
+
+### Accessing Raw Images
+
+Your images live on AntSciHub. Since the CDN uses structured URLs, you can
+link directly:
+
+```
+https://antscihub.org/v/{colony_id}/{nest_id}/{timestamp}
+```
+
+::: {.callout-tip}
+## Quarto feature: callout blocks
+These come in five flavors — `note`, `tip`, `warning`, `caution`, `important`.
+They can be collapsible (`collapse="true"`) and support full markdown inside.
+:::
+
+
+### Loading & Summarizing Data
+
+Code chunks execute at render time. `code-fold: true` in the YAML means the
+code is hidden by default but expandable — readers see the output, researchers
+can inspect the code.
+
+```{python}
+#| label: fig-growth-trajectories
+#| fig-cap: "Simulated larval growth trajectories by treatment. Replace with real data."
+#| fig-width: 8
+#| fig-height: 5
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+np.random.seed(42)
+days = np.arange(0, 30)
+
+fig, ax = plt.subplots(figsize=(8, 5))
+
+# Simulated trajectories — replace with actual DB query
+for i in range(12):
+    treatment = "queenright" if i < 6 else "queenless"
+    color = "#2d6a4f" if treatment == "queenright" else "#d4a373"
+    k = np.random.uniform(0.08, 0.15)
+    L_inf = np.random.uniform(2.5, 4.0) if treatment == "queenright" else np.random.uniform(1.8, 3.0)
+    noise = np.random.normal(0, 0.05, len(days))
+    length = L_inf * (1 - np.exp(-k * days)) + noise
+    ax.plot(days, length, color=color, alpha=0.6, linewidth=1.5,
+            label=treatment if i in [0, 6] else None)
+
+ax.set_xlabel("Day")
+ax.set_ylabel("Body length (mm)")
+ax.legend(frameon=False)
+ax.spines[['top', 'right']].set_visible(False)
+plt.tight_layout()
+plt.show()
+```
+
+Cross-reference: the growth trajectories in @fig-growth-trajectories suggest
+treatment effects on asymptotic size.
+
+
+### Inline Computed Values
+
+Quarto can embed computed values directly in prose:
+
+```{python}
+#| echo: false
+n_total = 128
+n_per_treatment = 64
+imaging_days = 30
+total_images = n_total * imaging_days * 24
+```
+
+The experiment will generate approximately `{python} f"{total_images:,}"`
+images over `{python} imaging_days` days — this number updates automatically
+if you change the parameters above.
+
+
+## Analysis
+
+### Growth Model
+
+Quarto renders LaTeX natively. Useful for documenting your statistical models
+alongside the code that fits them:
+
+Individual growth follows a von Bertalanffy curve:
+
+$$
+L(t) = L_\infty \left(1 - e^{-k(t - t_0)}\right)
+$$ {#eq-vonbert}
+
+where $L_\infty$ is the asymptotic length, $k$ is the growth rate constant,
+and $t_0$ is the theoretical age at zero length. See @eq-vonbert.
+
+The treatment effect enters through $L_\infty$:
+
+$$
+L_{\infty,i} = \beta_0 + \beta_1 \cdot \text{queenless}_i + u_{\text{colony}(i)}
+$$ {#eq-treatment}
+
+with colony as a random intercept (@eq-treatment). This is a mixed-effects
+nonlinear regression — `nlme::nlme` or `scipy.optimize.curve_fit` per
+individual followed by a linear model on the extracted parameters.
+
+
+### Fitted Results
+
+```{python}
+#| label: fig-parameter-comparison
+#| fig-cap: "Comparison of fitted growth parameters between treatments."
+#| fig-subcap:
+#|   - "Asymptotic length"
+#|   - "Growth rate constant"
+#| layout-ncol: 2
+#| fig-width: 4
+#| fig-height: 4
+
+# --- Quarto feature: sub-figures with shared caption and layout control ---
+
+# Panel A: L_inf by treatment
+fig1, ax1 = plt.subplots(figsize=(4, 4))
+qr_linf = np.random.normal(3.2, 0.3, 64)
+ql_linf = np.random.normal(2.4, 0.4, 64)
+parts = ax1.violinplot([qr_linf, ql_linf], positions=[1, 2], showmedians=True)
+for pc in parts['bodies']:
+    pc.set_alpha(0.6)
+ax1.set_xticks([1, 2])
+ax1.set_xticklabels(["Queenright", "Queenless"])
+ax1.set_ylabel("$L_\\infty$ (mm)")
+ax1.spines[['top', 'right']].set_visible(False)
+plt.tight_layout()
+plt.show()
+
+# Panel B: k by treatment
+fig2, ax2 = plt.subplots(figsize=(4, 4))
+qr_k = np.random.normal(0.12, 0.02, 64)
+ql_k = np.random.normal(0.10, 0.025, 64)
+parts = ax2.violinplot([qr_k, ql_k], positions=[1, 2], showmedians=True)
+for pc in parts['bodies']:
+    pc.set_alpha(0.6)
+ax2.set_xticks([1, 2])
+ax2.set_xticklabels(["Queenright", "Queenless"])
+ax2.set_ylabel("$k$ (day$^{-1}$)")
+ax2.spines[['top', 'right']].set_visible(False)
+plt.tight_layout()
+plt.show()
+```
+
+Reference sub-figures individually: @fig-parameter-comparison-1 shows the
+asymptotic length distributions, while @fig-parameter-comparison-2 shows
+growth rate constants.
+
+::: {.callout-warning}
+## Quarto feature: margin notes
+You can place content in the page margin with the `.column-margin` class.
+Useful for side-commentary, small reference figures, or annotation without
+interrupting the main flow. Add `column: margin` to a code chunk's YAML
+to push its output to the margin.
+:::
+
+
+## Methods
+
+### CV Pipeline
+
+Describe your SAM-based segmentation, morphometric extraction, etc.
+
+::: {.column-margin}
+**Pipeline version:** `v0.3.2` \
+**Last validated:** 2026-06-15
+:::
+
+```{mermaid}
+%%| label: fig-pipeline
+%%| fig-cap: "Image processing pipeline from raw frame to morphometric measurement."
+
+flowchart TD
+    A[Raw frame<br/>RPi camera] --> B[Background subtraction]
+    B --> C[SAM segmentation]
+    C --> D{Mask QC}
+    D -->|pass| E[Morphometric extraction]
+    D -->|fail| F[Manual correction tool]
+    F --> E
+    E --> G[Spline-based length]
+    E --> H[Ellipse-based area]
+    G --> I[(Measurements DB)]
+    H --> I
+```
+
+
+### Protocol Details
+
+::: {.callout-caution collapse="true"}
+## Quarto feature: collapsible callouts
+Lengthy protocols, equipment lists, or troubleshooting notes can go inside
+collapsible callouts. The reader sees the header; they expand only if needed.
+This keeps the page scannable without losing detail.
+
+**Example protocol step:** Aspirate 5 workers from source colony using a
+modified 15 mL Falcon tube aspirator. Transfer to micronest arena within 30
+seconds to minimize stress handling. Confirm 5 workers visually before sealing.
+:::
+
+
+### Linking to AntSciHub
+
+Reference specific video observations inline:
+
+> The larval secretion event in colony 4, nest 17 was first observed at
+> hour 342. See the raw footage:
+> [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
+
+
+:::
+
+<!-- ============================================================
+     END OF TABSET
+     ============================================================ -->
+
+
+## References {.unnumbered}
+
+<!-- Quarto auto-generates the reference list here from your .bib file.
+     Any [@key] cited above will appear. No manual formatting needed.
+     Swap CSL files to change citation style instantly. -->
+```
