@@ -27,7 +27,6 @@ lightbox: true
      ============================================================ -->
 ```
 
-:::::::: panel-tabset
 ## Overview
 
 {{< include "Overview section template.qmd" >}}
@@ -209,13 +208,6 @@ Lengthy protocols, equipment lists, or troubleshooting notes can go inside colla
 Reference specific video observations inline:
 
 > The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
-::::::::
-
-```{=html}
-<!-- ============================================================
-     END OF TABSET
-     ============================================================ -->
-```
 
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
