@@ -2,9 +2,11 @@
 /.quarto
 *_files/
 
-
+.venv
 .agents
 .codex
+
+_site
 
 /.quarto/
 **/*.quarto_ipynb
