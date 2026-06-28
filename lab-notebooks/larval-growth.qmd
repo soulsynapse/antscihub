@@ -27,9 +27,9 @@ lightbox: true
 
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
-**Last rendered:** {{< meta date >}} ·
-**Source:** [`larval-growth.qmd`](https://github.com/YOUR_ORG/YOUR_REPO/blob/main/larval-growth.qmd) ·
-**Freeze status:** outputs frozen at last local render
+**Last rendered:** {{< meta date >}} |
+**Source:** [`larval-growth.qmd`](https://github.com/soulsynapse/antscihub/blob/main/lab-notebooks/larval-growth.qmd) |
+**Render path:** GitHub Actions builds and deploys the site from `main`
 :::
 
 
@@ -40,14 +40,13 @@ lightbox: true
 ### Background
 
 Write your project motivation here. Quarto's citation system uses standard
-BibTeX — you cite inline with `[@key]` and the bibliography renders
-automatically. For example: worker-larva interactions mediate caste
-determination through nutritional and pheromonal signals [@linksvayer2011;
-@wheeler1986].
+BibTeX. Once a bibliography file is added, cite inline with `[@key]` and the
+bibliography will render automatically. For example: worker-larva interactions
+can mediate caste determination through nutritional and pheromonal signals.
 
 ### Experimental Design
 
-Quarto renders Mermaid diagrams natively — no external tool, no image export:
+Quarto renders Mermaid diagrams natively -- no external tool, no image export:
 
 ```{mermaid}
 %%| label: fig-design
@@ -97,7 +96,7 @@ https://antscihub.org/v/{colony_id}/{nest_id}/{timestamp}
 
 ::: {.callout-tip}
 ## Quarto feature: callout blocks
-These come in five flavors — `note`, `tip`, `warning`, `caution`, `important`.
+These come in five flavors -- `note`, `tip`, `warning`, `caution`, `important`.
 They can be collapsible (`collapse="true"`) and support full markdown inside.
 :::
 
@@ -105,7 +104,7 @@ They can be collapsible (`collapse="true"`) and support full markdown inside.
 ### Loading & Summarizing Data
 
 Code chunks execute at render time. `code-fold: true` in the YAML means the
-code is hidden by default but expandable — readers see the output, researchers
+code is hidden by default but expandable -- readers see the output, researchers
 can inspect the code.
 
 ```{python}
@@ -122,7 +121,7 @@ days = np.arange(0, 30)
 
 fig, ax = plt.subplots(figsize=(8, 5))
 
-# Simulated trajectories — replace with actual DB query
+# Simulated trajectories -- replace with actual DB query
 for i in range(12):
     treatment = "queenright" if i < 6 else "queenless"
     color = "#2d6a4f" if treatment == "queenright" else "#d4a373"
@@ -158,7 +157,7 @@ total_images = n_total * imaging_days * 24
 ```
 
 The experiment will generate approximately `{python} f"{total_images:,}"`
-images over `{python} imaging_days` days — this number updates automatically
+images over `{python} imaging_days` days -- this number updates automatically
 if you change the parameters above.
 
 
@@ -185,7 +184,7 @@ L_{\infty,i} = \beta_0 + \beta_1 \cdot \text{queenless}_i + u_{\text{colony}(i)}
 $$ {#eq-treatment}
 
 with colony as a random intercept (@eq-treatment). This is a mixed-effects
-nonlinear regression — `nlme::nlme` or `scipy.optimize.curve_fit` per
+nonlinear regression -- `nlme::nlme` or `scipy.optimize.curve_fit` per
 individual followed by a linear model on the extracted parameters.
 
 
@@ -306,7 +305,5 @@ Reference specific video observations inline:
 
 ## References {.unnumbered}
 
-<!-- Quarto auto-generates the reference list here from your .bib file.
-     Any [@key] cited above will appear. No manual formatting needed.
-     Swap CSL files to change citation style instantly. -->
-```
+Add `bibliography: references.bib` to the YAML and cite entries with `[@key]`
+once this notebook starts using literature references.

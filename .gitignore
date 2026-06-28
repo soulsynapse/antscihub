@@ -2,5 +2,9 @@
 /.quarto
 *_files/
 
+
+.agents
+.codex
+
 /.quarto/
 **/*.quarto_ipynb
