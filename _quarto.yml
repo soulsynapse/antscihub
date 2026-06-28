@@ -8,13 +8,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: Lab-notebooks/index.qmd
+      - href: lab-notebooks/index.qmd
         text: Lab Notebooks
   sidebar:
     contents:
       - index.qmd
       - section: "Lab Notebooks"
-        contents: lab-notebooks/*.qmd
+        contents: Lab-notebooks/*.qmd
 
 format:
   html:
