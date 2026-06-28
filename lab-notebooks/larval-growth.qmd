@@ -25,14 +25,6 @@ lightbox: true
      Replace placeholder text/code with your actual work.
      ============================================================ -->
 
-::: {.callout-note collapse="true"}
-## Reproducibility Info
-**Last rendered:** {{< meta date >}} |
-**Source:** [`larval-growth.qmd`](https://github.com/soulsynapse/antscihub/blob/main/lab-notebooks/larval-growth.qmd) |
-**Render path:** GitHub Actions builds and deploys the site from `main`
-:::
-
-
 ::: {.panel-tabset}
 
 ## Overview
@@ -307,3 +299,11 @@ Reference specific video observations inline:
 
 Add `bibliography: references.bib` to the YAML and cite entries with `[@key]`
 once this notebook starts using literature references.
+
+
+::: {.callout-note collapse="true"}
+## Reproducibility Info
+**Last rendered:** {{< meta date >}} |
+**Source:** [`larval-growth.qmd`](https://github.com/soulsynapse/antscihub/blob/main/lab-notebooks/larval-growth.qmd) |
+**Render path:** GitHub Actions builds and deploys the site from `main`
+:::
