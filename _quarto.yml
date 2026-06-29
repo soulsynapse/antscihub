@@ -23,17 +23,11 @@ website:
         href: https://github.com/soulsynapse
         text: GitHub
         aria-label: GitHub profile
-    collapse-level: 2          # auto-collapse deeper sections
-    contents:
-      - section: "Lab Notebooks"
-        contents: lab-notebooks/*.qmd
-      - section: "Templates"
-        contents:
-          - "Templates/Research Project Components/Research Project Template.qmd"
+    contents: []               # keep sidebar title/search/tools, but no site nav links
 
   # Footer
   page-footer:
-    center: "© 2026 Kendrick Nakamura"
+    center: "Â© 2026 Kendrick Nakamura"
 
   # Search options
   search:
@@ -68,12 +62,12 @@ format:
     lightbox: true             # click-to-zoom on figures
     fig-cap-location: bottom
 
-    # Math — KaTeX is much faster than MathJax
+    # Math â€” KaTeX is much faster than MathJax
     html-math-method: katex
 
     # Polish
     smooth-scroll: true
-    anchor-sections: true      # hover on heading → anchor link
+    anchor-sections: true      # hover on heading â†’ anchor link
     link-external-newwindow: true
 
 execute:
