@@ -35,11 +35,15 @@
 }
 @media (min-width: 992px) {
   body.docked #quarto-content.page-columns {
-    --ash-page-toc-width: clamp(8rem, 12vw, 11rem);
-    --ash-body-width: minmax(0, min(1020px, calc(100vw - var(--ash-page-toc-width) - 18rem)));
+    --ash-site-nav-width: 230px;
+    --ash-page-toc-width: clamp(7.5rem, 10vw, 9.5rem);
+    --ash-body-width: minmax(0, min(1020px, calc(100vw - var(--ash-site-nav-width) - var(--ash-page-toc-width) - 17rem)));
     --ash-margin-note-width: minmax(10rem, 15rem);
     display: grid !important;
     gap: 0;
+    margin-left: var(--ash-site-nav-width);
+    max-width: none;
+    width: calc(100% - var(--ash-site-nav-width));
     grid-template-columns:
       [screen-start screen-start-inset page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
       [body-start] 0.75rem
@@ -52,6 +56,12 @@
       [screen-end] !important;
   }
 
+  body.docked #quarto-sidebar.sidebar-navigation {
+    box-sizing: border-box;
+    width: var(--ash-site-nav-width);
+    z-index: 20;
+  }
+
   body.docked #quarto-margin-sidebar {
     box-sizing: border-box;
     grid-column: screen-start / body-start !important;
@@ -60,6 +70,7 @@
     padding-left: 0;
     padding-right: 0.75rem;
     width: auto;
+    z-index: 5;
   }
 
   body.docked #quarto-content.page-columns > .content,
@@ -78,13 +89,11 @@
     margin-right: 0;
   }
 }
+
 @supports selector(:has(*)) {
   @media (min-width: 992px) {
-    /* Keep the page ToC rail visible on pages with margin notes. Without this,
-       Quarto can treat margin content as owning the margin sidebar and collapse
-       the ToC while scrolling through notes. */
     body.docked #quarto-content.page-columns:has(.column-margin) {
-      --ash-page-toc-width: clamp(8rem, 12vw, 11rem);
+      --ash-page-toc-width: clamp(7.5rem, 10vw, 9.5rem);
     }
 
     body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar,
