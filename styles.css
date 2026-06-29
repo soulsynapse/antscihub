@@ -33,3 +33,53 @@
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.9rem;
 }
+@media (min-width: 1400px) {
+  body.docked #quarto-content.page-columns {
+    --ash-site-nav-width: 260px;
+    --ash-page-toc-width: 240px;
+    --ash-body-width: min(950px, calc(100vw - 260px - 240px - 250px - 4rem));
+    --ash-margin-note-width: 250px;
+    display: grid !important;
+    grid-template-columns:
+      [screen-start] var(--ash-site-nav-width)
+      [screen-start-inset page-start page-start-inset] var(--ash-page-toc-width)
+      [body-start-outset body-start body-content-start] minmax(0, var(--ash-body-width))
+      [body-content-end] 1.5rem
+      [body-end] 0
+      [body-end-outset] var(--ash-margin-note-width)
+      [page-end-inset] 1.5rem
+      [page-end screen-end-inset] minmax(1rem, 1fr)
+      [screen-end] !important;
+  }
+
+  body.docked #quarto-sidebar.sidebar-navigation {
+    box-sizing: border-box;
+    grid-column: screen-start / screen-start-inset !important;
+    width: 100%;
+  }
+
+  body.docked #quarto-margin-sidebar {
+    box-sizing: border-box;
+    grid-column: screen-start-inset / body-start !important;
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1.25rem;
+    width: 100%;
+  }
+
+  body.docked #quarto-content.page-columns > .content,
+  body.docked #quarto-document-content {
+    grid-column: body-content-start / body-content-end !important;
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.docked .page-columns .column-margin {
+    grid-column: body-end / page-end !important;
+    max-width: none;
+    width: auto !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

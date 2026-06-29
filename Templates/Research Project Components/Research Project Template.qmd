@@ -25,14 +25,13 @@ lightbox: true
      ============================================================ -->
 ```
 
-:::::::: panel-tabset
 ## Overview
 
 {{< include "Overview section template.qmd" >}}
 
 ## Data
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
 ## Quarto feature: callout blocks
 
 These come in five flavors -- `note`, `tip`, `warning`, `caution`, `important`. They can be collapsible (`collapse="true"`) and support full markdown inside.
@@ -154,7 +153,7 @@ plt.show()
 
 Reference sub-figures individually: @fig-parameter-comparison-1 shows the asymptotic length distributions, while @fig-parameter-comparison-2 shows growth rate constants.
 
-::: callout-warning
+::: {.callout-warning collapse="true"}
 ## Quarto feature: margin notes
 
 You can place content in the page margin with the `.column-margin` class. Useful for side-commentary, small reference figures, or annotation without interrupting the main flow. Add `column: margin` to a code chunk's YAML to push its output to the margin.
@@ -207,11 +206,10 @@ Lengthy protocols, equipment lists, or troubleshooting notes can go inside colla
 Reference specific video observations inline:
 
 > The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
-::::::::
 
 ```{=html}
 <!-- ============================================================
-     END OF TABSET
+     END OF TEMPLATE SECTIONS
      ============================================================ -->
 ```
 
