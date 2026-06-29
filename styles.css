@@ -48,6 +48,15 @@
   border-radius: 4px;
 }
 
+.toc-actions {
+  opacity: 0.25;
+  transition: opacity 160ms ease;
+}
+
+.toc-actions:hover,
+.toc-actions:focus-within {
+  opacity: 1;
+}
 body.template-no-site-links #quarto-sidebar .sidebar-menu-container {
   display: none;
 }
