@@ -255,59 +255,9 @@ Use **bibliographic trails** (follow citations backward from a useful source) an
 
 ## Methods
 
-### CV Pipeline
-
-Describe your SAM-based segmentation, morphometric extraction, etc.
-
-::: column-margin
-**Pipeline version:** `v0.3.2`\
-**Last validated:** 2026-06-15
-:::
-
-```{mermaid}
-%%| label: fig-pipeline
-%%| fig-cap: "Image processing pipeline from raw frame to morphometric measurement."
-
-flowchart TD
-    A[Raw frame<br/>RPi camera] --> B[Background subtraction]
-    B --> C[SAM segmentation]
-    C --> D{Mask QC}
-    D -->|pass| E[Morphometric extraction]
-    D -->|fail| F[Manual correction tool]
-    F --> E
-    E --> G[Spline-based length]
-    E --> H[Ellipse-based area]
-    G --> I[(Measurements DB)]
-    H --> I
-```
-
 ### Protocol Details
 
-::: column-margin
-Testing column margin stuff
-:::
-
-::: {.callout-caution collapse="true"}
-## Quarto feature: collapsible callouts
-
-Lengthy protocols, equipment lists, or troubleshooting notes can go inside collapsible callouts. The reader sees the header; they expand only if needed. This keeps the page scannable without losing detail.
-
-**Example protocol step:** Aspirate 5 workers from source colony using a modified 15 mL Falcon tube aspirator. Transfer to micronest arena within 30 seconds to minimize stress handling. Confirm 5 workers visually before sealing.
-:::
-
-### Linking to AntSciHub
-
-Reference specific video observations inline:
-
-> The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
-
 ## Data
-
-::: {.callout-tip collapse="true"}
-## Quarto feature: callout blocks
-
-These come in five flavors -- `note`, `tip`, `warning`, `caution`, `important`. They can be collapsible (`collapse="true"`) and support full markdown inside.
-:::
 
 ### Loading & Summarizing Data
 
@@ -346,7 +296,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-Cross-reference: the growth trajectories in @fig-growth-trajectories suggest treatment effects on asymptotic size.
+Example of cross-reference: the growth trajectories in @fig-growth-trajectories suggest treatment effects on asymptotic size.
 
 ### Inline Computed Values
 
@@ -360,27 +310,21 @@ imaging_days = 30
 total_images = n_total * imaging_days * 24
 ```
 
-The experiment will generate approximately `{python} f"{total_images:,}"` images over `{python} imaging_days` days -- this number updates automatically if you change the parameters above.
+The experiment will generate approximately `{python} f"{total_images:,}"` images over `{python} imaging_days` days -- this number updates automatically if you change the parameters above. (Note, the code for this example is only visible in the qmd file.)
 
 ## Analysis
 
-### Growth Model
+### LaTeX
 
-Quarto renders LaTeX natively. Useful for documenting your statistical models alongside the code that fits them:
-
-Individual growth follows a von Bertalanffy curve:
+Quarto renders LaTeX natively.
 
 $$L(t) = L_\infty \left(1 - e^{-k(t - t_0)}\right)$$ {#eq-vonbert}
 
-where $L_\infty$ is the asymptotic length, $k$ is the growth rate constant, and $t_0$ is the theoretical age at zero length. See @eq-vonbert.
+Example of inline reference: where $L_\infty$ is the asymptotic length, $k$ is the growth rate constant, and $t_0$ is the theoretical age at zero length. See @eq-vonbert.
 
-The treatment effect enters through $L_\infty$:
+## Results
 
-$$L_{\infty,i} = \beta_0 + \beta_1 \cdot \text{queenless}_i + u_{\text{colony}(i)}$$ {#eq-treatment}
-
-with colony as a random intercept (@eq-treatment). This is a mixed-effects nonlinear regression -- `nlme::nlme` or `scipy.optimize.curve_fit` per individual followed by a linear model on the extracted parameters.
-
-### Fitted Results
+Example results
 
 ```{python}
 #| label: fig-parameter-comparison
@@ -424,18 +368,6 @@ plt.show()
 ```
 
 Reference sub-figures individually: @fig-parameter-comparison-1 shows the asymptotic length distributions, while @fig-parameter-comparison-2 shows growth rate constants.
-
-::: {.callout-warning collapse="true"}
-## Quarto feature: margin notes
-
-You can place content in the page margin with the `.column-margin` class. Useful for side-commentary, small reference figures, or annotation without interrupting the main flow. Add `column: margin` to a code chunk's YAML to push its output to the margin.
-:::
-
-```{=html}
-<!-- ============================================================
-     END OF TEMPLATE SECTIONS
-     ============================================================ -->
-```
 
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
