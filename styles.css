@@ -1,4 +1,16 @@
 /* Give child pages in the left sidebar a clearer visual indent. */
+#quarto-sidebar .sidebar-item {
+  margin-block: 0.15rem;
+}
+
+#quarto-sidebar .sidebar-item-section {
+  margin-block: 0.35rem;
+}
+
+#quarto-sidebar .sidebar-item-container {
+  line-height: 1.35;
+  padding-block: 0.1rem;
+}
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.15rem;
 }
