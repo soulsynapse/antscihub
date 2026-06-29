@@ -2,8 +2,6 @@
 title: "Lab Notebook Template"
 subtitle: "Micronest time-lapse experiment"
 author: "Kendrick"
-date: last-modified
-date-format: "YYYY-MM-DD"
 
 # -- Page behavior --
 toc: true
@@ -221,7 +219,7 @@ Reference specific video observations inline:
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
 
-**Last rendered:** {{< meta date >}} \| **Source:** [`Lab Notebook Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Lab%20Notebook%20Components/Lab%20Notebook%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
+**Source:** [`Lab Notebook Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Lab%20Notebook%20Components/Lab%20Notebook%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
 :::
 
 ## References {.unnumbered}
