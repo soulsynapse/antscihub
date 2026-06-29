@@ -16,7 +16,7 @@ website:
   bread-crumbs: false            # show page hierarchy in the header
 
   sidebar:
-    style: docked
+    style: floating
     search: true               # search bar in the sidebar
     tools:
       - icon: github
@@ -48,13 +48,12 @@ format:
     css: styles.css
     toc: true
     toc-depth: 3
-    toc-expand: 1              # show main ToC sections; expand the active branch while scrolling
+    toc-expand: 2              # auto-expand first 2 levels in ToC
     toc-location: right
 
     # Wider body (default is 700px)
     grid:
-      sidebar-width: 190px
-      body-width: 1100px
+      body-width: 950px
       margin-width: 250px
 
     # Code
