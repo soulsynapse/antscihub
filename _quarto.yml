@@ -48,7 +48,7 @@ format:
     css: styles.css
     toc: true
     toc-depth: 3
-    toc-expand: 2              # auto-expand first 2 levels in ToC
+    toc-expand: 1              # show main ToC sections; expand the active branch while scrolling
     toc-location: left
 
     # Wider body (default is 700px)

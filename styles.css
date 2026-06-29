@@ -33,3 +33,20 @@
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.9rem;
 }
+@media (min-width: 992px) {
+  body.docked #quarto-content.page-columns.toc-left {
+    grid-template-columns:
+      [screen-start] var(--ash-site-nav-width, 260px)
+      [screen-start-inset page-start page-start-inset body-start-outset body-start] var(--ash-page-toc-width, 220px)
+      [body-content-start] minmax(0, var(--ash-body-width, 950px))
+      [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] minmax(1.5rem, 1fr)
+      [screen-end];
+  }
+
+  body.docked #quarto-sidebar-toc-left,
+  body.docked .sidebar.toc-left {
+    grid-column: body-start / body-content-start;
+    padding-left: 1rem;
+    padding-right: 1.25rem;
+  }
+}
