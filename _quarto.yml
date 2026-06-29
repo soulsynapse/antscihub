@@ -49,7 +49,7 @@ format:
     toc: true
     toc-depth: 3
     toc-expand: 1              # show main ToC sections; expand the active branch while scrolling
-    toc-location: left
+    toc-location: right
 
     # Wider body (default is 700px)
     grid:
