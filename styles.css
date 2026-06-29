@@ -63,6 +63,6 @@
   opacity: 1;
 }
 
-body.template-no-site-links #quarto-sidebar .sidebar-menu-container {
+#quarto-sidebar .sidebar-menu-container {
   display: none;
 }
