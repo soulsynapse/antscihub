@@ -1,0 +1,8 @@
+/* Give child pages in the left sidebar a clearer visual indent. */
+#quarto-sidebar .sidebar-item-section > ul .sidebar-item-container {
+  padding-left: 1.15rem;
+}
+
+#quarto-sidebar .sidebar-item-section > ul .sidebar-item-section > ul .sidebar-item-container {
+  padding-left: 1.9rem;
+}

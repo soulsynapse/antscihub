@@ -4,7 +4,7 @@ project:
 
 website:
   title: "AntSciHub"
-  description: "SIRG Lab Notebooks & Research"
+  description: "Lab Notebooks & Research"
   favicon: favicon.png  # drop a .png in the project root
 
   # Navigation
@@ -38,6 +38,7 @@ format:
     theme:
       light: cosmo
       dark: darkly             # gives you a light/dark toggle for free
+    css: styles.css
     toc: true
     toc-depth: 3
     toc-expand: 2              # auto-expand first 2 levels in ToC
