@@ -37,8 +37,7 @@
 .sidebar nav[role="doc-toc"] #toc-title,
 .sidebar nav[role="doc-toc"] .toc-title,
 .sidebar nav[role="doc-toc"] h2,
-.sidebar #TOC #toc-title,
-#quarto-toc-toggle > .quarto-sidebar-toggle-title {
+.sidebar #TOC #toc-title {
   display: none !important;
 }
 
@@ -60,4 +59,26 @@
 .toc-actions:hover,
 .toc-actions:focus-within {
   opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  #quarto-lefttoc-toggle,
+  #quarto-toc-toggle {
+    display: block !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    width: auto !important;
+    max-width: calc(100% - 2rem);
+  }
+
+  #quarto-lefttoc-toggle > .quarto-sidebar-toggle-title,
+  #quarto-toc-toggle > .quarto-sidebar-toggle-title {
+    display: block !important;
+  }
+
+  #quarto-lefttoc-toggle .quarto-sidebar-toggle-contents,
+  #quarto-toc-toggle .quarto-sidebar-toggle-contents {
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+  }
 }
