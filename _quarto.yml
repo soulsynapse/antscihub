@@ -43,7 +43,7 @@ format:
     toc: true
     toc-depth: 3
     toc-expand: 2              # auto-expand first 2 levels in ToC
-    toc-location: left
+    toc-location: right
 
     # Wider body (default is 700px)
     grid:
