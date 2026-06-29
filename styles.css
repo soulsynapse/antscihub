@@ -46,6 +46,18 @@
   padding-left: 2em;
 }
 
+.sidebar nav[role="doc-toc"] > ul > li:first-child > a.nav-link:not(.active),
+.sidebar #TOC > ul > li:first-child > a.nav-link:not(.active) {
+  border-left-color: transparent;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a.active,
+.sidebar #TOC ul > li > a.active,
+.sidebar #TOC ul > li > ul > li > a.active {
+  border-left-width: 2px;
+}
+
 .sidebar nav[role="doc-toc"] a.active,
 .sidebar #TOC a.active {
   background-color: #8080801f;
