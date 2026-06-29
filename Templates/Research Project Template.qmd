@@ -36,7 +36,7 @@ lightbox: true
 -->
 ```
 
-### Research Interest
+### 1. Research Interest
 
 ::: {.callout-note collapse="true" title="What is a research interest?"}
 A research interest is the raw starting material for a project. This is the thing you're curious about *before* you've scoped/focused/formalized it. This is not a claim, a question, or a study proposal. You are identifying the **itch**. The fascination. The puzzle. The nagging observation that makes you want to know more.
@@ -52,7 +52,7 @@ From Booth et al.: "a research topic is an interest stated specifically enough f
 
 <!-- Write your research interest here -->
 
-### Broad Research Topic
+### 2. Broad Research Topic
 
 ::: {.callout-note collapse="true" title="What is a broad research topic?"}
 A broad research topic takes your interest and names a domain of inquiry. You are naming the process or the system by which your interest is understood. At this stage, you can state your topic in four or five words: "division of labor in ants," "the evolution of cooperation," "gene regulation in development." Booth et al. warn that a topic this broad will "intimidate you with the task of finding, much less reading, even a fraction of the sources available." That's normal.
@@ -60,7 +60,6 @@ A broad research topic takes your interest and names a domain of inquiry. You ar
 The purpose of writing it down explicitly is diagnostic: if your topic is this broad, you know you haven't focused yet, and you can see what work remains. A broad topic is a *starting place* (the word "topic" comes from *topos*, Greek for "place"), not a destination. You will head off from here in a particular direction.
 
 By narrowing down the process or systems that specifically influence your research interest, you are able to take one step closer to causal questions. I recommend stating as many as you can that qualify, and picking one in particular for *this* project.
-
 
 *(Booth et al. 2016, §3.2)*
 :::
@@ -72,7 +71,7 @@ By narrowing down the process or systems that specifically influence your resear
 ::: {.callout-note collapse="true" title="What is a focused research topic?"}
 You narrow a broad topic into a focused one by adding words derived from **verbs that express actions or relationships**: *conflict*, *influence*, *cause*, *contribute*, *change*, *develop*, *shape*, *constrain*. A static topic ("caste determination in ants") becomes a focused one when it contains dynamic, relational language ("the *influence* of queen presence on larval developmental *trajectories* during the 3rd-instar commitment window in *Temnothorax*").
 
-This is inherent to causal components of a system. The way a system is influenced by something is a scientific explanation. That **explanation** ties back to your interest; if your interest is something you explain to others unprompted, your focused research topic is the next chapter of that story.
+Notice what we are doing: we started with **something interesting**, moved to **specific domains** where the story can live, and now we are asking **within that domain, who are the actors?** We are picking a few focused components within one domain and **asking how they interact**.
 
 Booth et al. offer a useful test: **restate your focused topic as a full sentence.** If that sentence makes a claim a reader might find interesting (even if thin at this stage) you have a viable topic.
 
@@ -81,8 +80,6 @@ Booth et al. offer a useful test: **restate your focused topic as a full sentenc
 - Add **action concepts**: What is conflicting, changing, influencing, developing, constraining, or emerging?
 - Add **specificity**: Which system, which species, which time period, which population, which level of organization?
 - Add **comparison or contrast**: Between what and what?
-
-**Caution:** Don't narrow so far that you can't find information or that the question becomes trivial. The book warns against both extremes - too much available information (unfocused) and too little (over-narrowed).
 
 *(Booth et al. 2016, §3.2)*
 :::
@@ -103,7 +100,7 @@ Ask questions across these categories (the point is to stimulate thinking, not t
 - **Categorization:** How can it be grouped into kinds? How does it compare and contrast with similar things?
 - **Negative inversions:** Turn positive questions negative. Why does X *not* occur? How does A *not* differ from B? What features are typically *not* significant?
 - **Speculative / Counterfactual:** What if this didn't exist? What if it were placed in a new context? How would things be different?
-- **Source-driven questions:** Build on agreement — can you extend a source's claim to new cases, support it with new evidence, or apply an analogous analysis? Build on disagreement — does a source mistake a causal relationship, oversimplify a category, or ignore a perspective?
+- **Source-driven questions:** Build on agreement. Can you extend a source's claim to new cases, support it with new evidence, or apply an analogous analysis? Alternatively, build on disagreement. Does a source mistake a causal relationship, oversimplify a category, or ignore a perspective?
 
 #### Evaluating questions
 
@@ -123,21 +120,21 @@ Look for questions whose answers would make you think about the topic in a **new
 ### Significance ("So What?")
 
 ::: {.callout-note collapse="true" title="Why this is the pivotal section"}
-This is the most important section in the overview — and the hardest to fill in. Once you have a question that holds your interest, you must pose a tougher one about it: **So what?** Beyond your own interest in its answer, why would others think it a question worth asking?
+This is the most important section. Beyond your own interest in its answer, why would others think it a question worth asking? Say you have the answer. Given that answer, how would you respond to the question "**So what?**"
 
 The book provides a three-step formula that is the central organizing device of the entire research process:
 
-> **Step 1 — Topic:** I am studying / working on \_\_\_\_\_\_\_\_\_\_
+> **Step 1: Topic:** I am studying / working on \_\_\_\_\_\_\_\_\_\_
 >
-> **Step 2 — Question:** because I want to find out who/what/when/where/whether/why/how \_\_\_\_\_\_\_\_\_\_
+> **Step 2: Question:** because I want to find out who/what/when/where/whether/why/how \_\_\_\_\_\_\_\_\_\_
 >
-> **Step 3 — Significance:** in order to help my reader understand \_\_\_\_\_\_\_\_\_\_
+> **Step 3: Significance:** in order to help my reader understand \_\_\_\_\_\_\_\_\_\_
 
 **Step 1 → Step 2** is the transition from data collector to researcher. **Step 2 → Step 3** is the transition from someone with a question to someone with a *problem that a community cares about*. Without Step 3, the worst response your work can receive is not "I disagree" but **"I don't care."**
 
 Think of it this way: *What will be lost if you don't answer your question?* How will not answering it keep us from understanding something else better than we do?
 
-**It is normal** not to be able to fill in Step 3 at the outset of a project — many researchers can't complete it until they finish a first draft. But you must keep working toward it, and you should revisit this section regularly. The book is explicit: "you make no mistake beginning your research without a good answer to that third question — but you face a problem when you finish your research without having thought through those three steps at all."
+**It is normal** not to be able to fill in Step 3 at the outset of a project. Many researchers can't complete it until they finish a first draft. But you must keep working toward it, and you should revisit this section regularly. The book is explicit: "you make no mistake beginning your research without a good answer to that third question — Why does this matter? — but you face a problem when you finish your research without having thought through those three steps at all."
 
 **Test your progress:** Can you explain your three-step sentence to a colleague, a friend, a roommate? Even if Step 3 is tentative, articulating the attempt reveals where you are and where you still need to go.
 
@@ -153,7 +150,7 @@ Think of it this way: *What will be lost if you don't answer your question?* How
 ### Problem Structure
 
 ::: {.callout-note collapse="true" title="Transforming a question into a research problem"}
-A question becomes a research *problem* when you can articulate not just what you don't know, but what **consequence** that ignorance has — what larger, more important question you can't answer because of this gap. The book defines every problem as having two parts:
+A question becomes a research *problem* when you can articulate not just what you don't know, but what **consequence** that ignorance has. What are the larger, more important questions you can't answer because of this gap? Booth et al. define every problem as having two parts:
 
 1.  **Condition:** some version of not knowing or not understanding something
 2.  **Consequence:** a lack of understanding that keeps us from understanding something *else* even more significant
@@ -166,7 +163,7 @@ The two questions must relate in two ways: (a) the answer to Q1 helps answer Q2,
 
 #### Practical vs. Conceptual problems
 
-Most academic research addresses **conceptual problems** — the "cost" is a gap in understanding, not a tangible harm in the world. If your research also has practical implications, the book advises: formulate the project as pure research first (Steps 1–3 addressing understanding), then add practical application as an **optional Step 4**. Don't artificially bolt practical significance onto conceptual work to make it seem more important — readers will see through it. The book provides a test:
+Some academic research addresses **conceptual problems**, where the cost is a gap in understanding, not a tangible harm in the world. If your research also has practical implications, you can formulate the project as pure research first (Steps 1–3 addressing understanding), then add practical application as an **optional Step 4**. Don't artificially bolt practical significance onto conceptual work to make it seem more important - good researchers rarely overclaim. Booth et al. provide a test:
 
 > (a) If my readers want to achieve \[practical goal from Step 4\], (b) would they think they could do it if they found out \[answer to your question from Step 2\]?
 
@@ -175,7 +172,7 @@ If the answer is "probably not," the practical connection is a stretch. Present 
 #### Finding problems
 
 - **In your sources:** Look for contradictions, inconsistencies, incomplete explanations, and unsupported assumptions. Many journal articles end with paragraphs about open questions and ideas for further research — carve out a piece of one.
-- **In your own drafts:** Your best thinking often appears in the last pages you write. If you arrive at an unanticipated claim, ask yourself what question it might answer — you may have solved a problem you haven't yet posed.
+- **In your own drafts:** Your best thinking often appears in the last pages you write. If you arrive at an unanticipated claim, ask yourself what question it might answer. You may find that you've solved a problem you haven't yet posed.
 - **Through conversation:** Talk to colleagues, advisors, and collaborators. What would they do with your answer? What new questions might it raise?
 
 *(Booth et al. 2016, §4.1–4.4)*
@@ -192,22 +189,22 @@ If the answer is "probably not," the practical connection is a stretch. Present 
 ### Working Hypothesis / Elevator Story
 
 ::: {.callout-note collapse="true" title="Why you need a working answer before you have all the evidence"}
-The book describes an "elevator story" — a short summary of your project that you could give someone on the way to a meeting. It should include: (1) your research question, (2) your best guess at an answer, and (3) the kind of evidence you expect to use to support it.
+An "elevator story" is a short summary of your project that you could give someone on the way to a meeting. It should include: (1) your research question, (2) your best guess at an answer, and (3) the kind of evidence you expect to use to support it.
 
-This is not a commitment to a conclusion. It is a **working hypothesis** — what the philosopher C. S. Peirce called a "hypothesis on probation." Its purpose is threefold:
+This is not a commitment to a conclusion. It is a **working hypothesis**, e.g., what the philosopher C. S. Peirce called a "hypothesis on probation." Its purpose is threefold:
 
 - It gives **direction** to your search for evidence (without a tentative answer, you don't know what data to look for)
 - It makes your project **communicable** to others (advisors, lab members, collaborators)
-- It is **revisable** — you will update it as evidence accumulates, and that revision *is* the intellectual progress of the project
+- It is **revisable.** You will update it as evidence accumulates, and that revision *is* the intellectual progress of the project
 
-The book is explicit that research is not a linear march from question to answer: "it's more like zigzagging up and down a rocky hill through overgrown woods, sometimes in a fog, searching for something you won't recognize until you see it." The working hypothesis is your compass bearing, not your destination.
+Research isn't a beeline to the answer: "it's more like zigzagging up and down a rocky hill through overgrown woods, sometimes in a fog, searching for something you won't recognize until you see it." The working hypothesis is your compass bearing, not your destination.
 
-**Write this as a single paragraph.** Revise it regularly — each revision is a snapshot of your evolving understanding.
+**Write this as a single paragraph**, and revise it regularly. Each revision is a snapshot of your evolving understanding. Quarto specifically has a useful tool for this, where you can embed another file in your research project document. That way, as you change it, you can see how it evolved over time, separate from the rest of your research project.
 
 *(Booth et al. 2016, Part II Prologue; §3.4)*
 :::
 
-<!-- Write your working hypothesis / elevator story here -->
+<!-- Write your working hypothesis / elevator story here, or create a separate file and embed it -->
 
 ### Sources & Problem-Finding
 
@@ -218,13 +215,13 @@ At this stage, you are **not** conducting a comprehensive literature review. You
 
 - **Primary sources:** The "raw data" or evidence you will use to develop, test, and justify your claim. In behavioral ecology, these are your own observations, experimental results, datasets. What counts as primary varies by field.
 - **Secondary sources:** Peer-reviewed books and articles based on primary sources, intended for scholarly audiences. These constitute the **conversation** you are joining. The book warns: if you cite only tertiary sources in a scholarly argument, "you will mark yourself as either a novice or an outsider."
-- **Tertiary sources:** Syntheses for general readers — textbooks, encyclopedias, review articles aimed at broad audiences. Useful for orientation but limited: they can oversimplify and become outdated. Use them to get your bearings, then move to secondary sources.
+- **Tertiary sources:** Syntheses for general readers: textbooks, encyclopedias, review articles aimed at broad audiences. Useful for orientation but limited: they can oversimplify and become outdated. Use them to get your bearings, then move to secondary sources.
 
 **Important:** These categories are relative to your project. A journal article is normally a secondary source, but it becomes primary if your research concerns the author, the field's methods, or its intellectual history.
 
 #### Reading for a problem
 
-Don't read randomly — read deliberately to find problems. Look for:
+Read deliberately to find problems. Look for:
 
 - **Creative agreement:** Can you extend a source's claim to new cases? Offer new or stronger evidence? Apply their framework to a new system?
 - **Creative disagreement:** Does a source mistake a causal relationship? Oversimplify a category? Ignore a relevant perspective? Assume something is true without evidence? Claim something has a feature it doesn't?
@@ -237,7 +234,7 @@ Key criteria: Is it peer-reviewed? Is the author reputable in the field? Is it c
 
 #### Following trails
 
-Use **bibliographic trails** (follow citations backward from a useful source) and **citation indexing** (follow citations forward — who has cited this source since it was published?). The combination builds a network of sources far more efficiently than keyword searching alone.
+Use **bibliographic trails** (follow citations backward from a useful source) and **citation indexing** (follow citations forward to find out how understanding has evolved since the source was first published). The combination builds a network of sources far more efficiently than keyword searching alone.
 
 *(Booth et al. 2016, §5.1–5.4, §6.3)*
 :::
