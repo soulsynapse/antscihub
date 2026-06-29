@@ -17,7 +17,6 @@ website:
     search: true               # search bar in the sidebar
     collapse-level: 2          # auto-collapse deeper sections
     contents:
-      - index.qmd
       - section: "Lab Notebooks"
         contents: lab-notebooks/*.qmd
       - section: "Templates"
@@ -52,7 +51,7 @@ format:
     # Code
     code-fold: true            # collapse code blocks by default, click to expand
     code-summary: "Show code"
-    code-tools: true           # adds a "code" menu to toggle all code / view source
+    code-tools: false          # hide the global code tools menu
     code-copy: true            # copy button on code blocks
     code-overflow: scroll      # horizontal scroll instead of wrapping
     highlight-style: github

@@ -10,7 +10,7 @@ toc: true
 toc-depth: 3
 number-sections: false
 code-fold: true          # all code chunks collapsed by default; reader can expand
-code-tools: true         # adds a </> button to show/hide all code at once
+code-tools: false          # hide the global code tools menu
 fig-align: center
 execute:
   freeze: true           # only re-run when you explicitly render this page
