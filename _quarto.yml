@@ -53,7 +53,7 @@ format:
 
     # Wider body (default is 700px)
     grid:
-      sidebar-width: 230px
+      sidebar-width: 190px
       body-width: 950px
       margin-width: 250px
 

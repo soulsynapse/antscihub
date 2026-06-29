@@ -35,17 +35,17 @@
 }
 @media (min-width: 992px) {
   body.docked #quarto-content.page-columns {
-    --ash-site-nav-width: 230px;
+    --ash-site-nav-width: 190px;
     --ash-page-toc-width: clamp(7.5rem, 10vw, 9.5rem);
     --ash-body-width: minmax(0, min(1020px, calc(100vw - var(--ash-site-nav-width) - var(--ash-page-toc-width) - 17rem)));
     --ash-margin-note-width: minmax(10rem, 15rem);
     display: grid !important;
     gap: 0;
-    margin-left: var(--ash-site-nav-width);
     max-width: none;
-    width: calc(100% - var(--ash-site-nav-width));
+    width: 100%;
     grid-template-columns:
-      [screen-start screen-start-inset page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
+      [screen-start] var(--ash-site-nav-width)
+      [screen-start-inset page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
       [body-start] 0.75rem
       [body-content-start] var(--ash-body-width)
       [body-content-end] 1rem
@@ -58,13 +58,15 @@
 
   body.docked #quarto-sidebar.sidebar-navigation {
     box-sizing: border-box;
-    width: var(--ash-site-nav-width);
+    grid-column: screen-start / screen-start-inset !important;
+    max-width: none;
+    width: auto;
     z-index: 20;
   }
 
   body.docked #quarto-margin-sidebar {
     box-sizing: border-box;
-    grid-column: screen-start / body-start !important;
+    grid-column: screen-start-inset / body-start !important;
     max-width: none;
     min-width: 0;
     padding-left: 0;
@@ -105,7 +107,7 @@
     }
 
     body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar {
-      grid-column: screen-start / body-start !important;
+      grid-column: screen-start-inset / body-start !important;
       min-width: 0;
       width: auto;
     }
