@@ -3,12 +3,9 @@ title: "AntSciHub"
 listing:
   - id: templates-list
     contents: "Templates/**/*Template.qmd"
-    type: table
+    type: custom
+    template: _listing/templates-list.ejs.md
     fields: [title, description]
-    field-links: [title]
-    field-display-names:
-      title: "Name"
-      description: "Description"
     sort: title
     sort-ui: false
     filter-ui: false

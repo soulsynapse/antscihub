@@ -440,7 +440,7 @@ Reference specific video observations inline:
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
 
-**Source:** [`Research Project Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Research%20Project%20Components/Research%20Project%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
+**Source:** [`Research Project Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Research%20Project%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
 :::
 
 ## References {.unnumbered}
