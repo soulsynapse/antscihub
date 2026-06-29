@@ -27,7 +27,7 @@ website:
 
   # Footer
   page-footer:
-    center: "Â© 2026 Kendrick Nakamura"
+    center: "© 2026 Kendrick Nakamura"
 
   # Search options
   search:
@@ -62,12 +62,12 @@ format:
     lightbox: true             # click-to-zoom on figures
     fig-cap-location: bottom
 
-    # Math â€” KaTeX is much faster than MathJax
+    # Math — KaTeX is much faster than MathJax
     html-math-method: katex
 
     # Polish
     smooth-scroll: true
-    anchor-sections: true      # hover on heading â†’ anchor link
+    anchor-sections: true      # hover on heading → anchor link
     link-external-newwindow: true
 
 execute:
