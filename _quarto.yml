@@ -12,18 +12,9 @@ website:
   back-to-top-navigation: true
   bread-crumbs: true           # shows path breadcrumbs above title
 
-  navbar:
-    search: true               # search bar in the navbar
-    left:
-      - href: index.qmd
-        text: Home
-      - href: lab-notebooks/index.qmd
-        text: Lab Notebooks
-      - href: "Templates/Lab Notebook Components/Lab Notebook Template.qmd"
-        text: Templates
-
   sidebar:
     style: floating
+    search: true               # search bar in the sidebar
     collapse-level: 2          # auto-collapse deeper sections
     contents:
       - index.qmd
@@ -39,7 +30,7 @@ website:
 
   # Search options
   search:
-    location: navbar
+    location: sidebar
     type: overlay              # fullscreen search overlay
 
 format:
