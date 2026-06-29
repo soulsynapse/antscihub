@@ -85,27 +85,10 @@
     display: none !important;
   }
 
-  /* Quarto can wrap the page ToC in a fixed toggle when margin notes are present.
-     Keep the ToC as a rail and suppress the extra "On this page" toggle bar. */
+  /* Quarto creates a duplicate ToC toggle while scrolling through margin-note
+     sections. The real ToC rail is #quarto-margin-sidebar, so hide the clone. */
   body.docked #quarto-toc-toggle.quarto-sidebar-toggle {
-    grid-column: page-start / body-start !important;
-    left: auto !important;
-    max-width: none;
-    position: sticky !important;
-    top: 0 !important;
-    width: auto !important;
-    z-index: 5;
-  }
-
-  body.docked #quarto-toc-toggle.quarto-sidebar-toggle > .quarto-sidebar-toggle-title {
     display: none !important;
-  }
-
-  body.docked #quarto-toc-toggle.quarto-sidebar-toggle > .quarto-sidebar-toggle-contents {
-    display: block !important;
-    height: auto !important;
-    overflow: visible !important;
-    width: auto !important;
   }
   body.docked #quarto-content.page-columns > .content,
   body.docked #quarto-document-content {
