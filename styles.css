@@ -33,38 +33,33 @@
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.9rem;
 }
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   body.docked #quarto-content.page-columns {
-    --ash-site-nav-width: 260px;
-    --ash-page-toc-width: 240px;
-    --ash-body-width: min(950px, calc(100vw - 260px - 240px - 250px - 4rem));
-    --ash-margin-note-width: 250px;
+    --ash-page-toc-width: clamp(8rem, 12vw, 11rem);
+    --ash-body-width: minmax(0, min(1020px, calc(100vw - var(--ash-page-toc-width) - 18rem)));
+    --ash-margin-note-width: minmax(10rem, 15rem);
     display: grid !important;
+    gap: 0;
     grid-template-columns:
-      [screen-start] var(--ash-site-nav-width)
-      [screen-start-inset page-start page-start-inset] var(--ash-page-toc-width)
-      [body-start-outset body-start body-content-start] minmax(0, var(--ash-body-width))
-      [body-content-end] 1.5rem
+      [screen-start screen-start-inset page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
+      [body-start] 0.75rem
+      [body-content-start] var(--ash-body-width)
+      [body-content-end] 1rem
       [body-end] 0
       [body-end-outset] var(--ash-margin-note-width)
-      [page-end-inset] 1.5rem
-      [page-end screen-end-inset] minmax(1rem, 1fr)
+      [page-end-inset] 1rem
+      [page-end screen-end-inset] minmax(0, 1fr)
       [screen-end] !important;
-  }
-
-  body.docked #quarto-sidebar.sidebar-navigation {
-    box-sizing: border-box;
-    grid-column: screen-start / screen-start-inset !important;
-    width: 100%;
   }
 
   body.docked #quarto-margin-sidebar {
     box-sizing: border-box;
-    grid-column: screen-start-inset / body-start !important;
+    grid-column: screen-start / body-start !important;
     max-width: none;
-    padding-left: 1rem;
-    padding-right: 1.25rem;
-    width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0.75rem;
+    width: auto;
   }
 
   body.docked #quarto-content.page-columns > .content,
@@ -76,7 +71,7 @@
   }
 
   body.docked .page-columns .column-margin {
-    grid-column: body-end / page-end !important;
+    grid-column: body-end-outset / page-end-inset !important;
     max-width: none;
     width: auto !important;
     margin-left: 0;
