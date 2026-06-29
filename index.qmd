@@ -1,13 +1,28 @@
 ---
 title: "AntSciHub"
+listing:
+  - id: templates-list
+    contents: "Templates/**/*Template.qmd"
+    type: table
+    fields: [title, description]
+    field-links: [title]
+    field-display-names:
+      title: "Name"
+      description: "Description"
+    sort: title
+    sort-ui: false
+    filter-ui: false
 ---
 
 Welcome to AntSciHub v4
 
 Currently trying this out as a pilot for a lab notebook setup. Please excuse the dust 🏗️
 
+# Resources
+
 # Templates
 
-| Template | Description |
-|---|---|
-| [Research Project Template](Templates/Research%20Project%20Components/Research%20Project%20Template.qmd) | Starter structure for research project notes, data, analysis, methods, and references. |
+These templates are maintained as reusable Quarto starting points.
+
+::: {#templates-list}
+:::

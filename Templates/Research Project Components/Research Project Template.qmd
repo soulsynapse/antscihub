@@ -1,6 +1,7 @@
 ---
 title: "Research Project Template"
 subtitle: "A subtitle for your project."
+description: "Starter structure for research project notes, data, analysis, methods, and references."
 author: "Firstname Lastname"
 
 # -- Page behavior --
