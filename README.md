@@ -2,4 +2,4 @@
 
 Repository for AntSciHub materials.
 
-soulsynapse.github.io/antscihub
+[Link to the WIP](soulsynapse.github.io/antscihub)
