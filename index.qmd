@@ -17,6 +17,10 @@ Currently trying this out as a pilot for a lab notebook setup. Please excuse the
 
 # Resources
 
+# Tools
+
+TODO: Write up on general philosophy towards *specific* tools.
+
 # Templates
 
 These templates are maintained as reusable Quarto starting points.
