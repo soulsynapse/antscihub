@@ -1,12 +1,10 @@
+# Quarto caches and build outputs
 .quarto/
-/.quarto
+_site/
 *_files/
-
-.venv
-.agents
-.codex
-
-_site
-
-/.quarto/
 **/*.quarto_ipynb
+
+# Local development state
+.venv/
+.agents/
+.codex/
