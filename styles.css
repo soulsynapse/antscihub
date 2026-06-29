@@ -42,6 +42,11 @@
   display: none !important;
 }
 
+.sidebar nav[role="doc-toc"] ul ul,
+.sidebar #TOC ul ul {
+  padding-left: 2em;
+}
+
 .sidebar nav[role="doc-toc"] a.active,
 .sidebar #TOC a.active {
   background-color: #ededed;
