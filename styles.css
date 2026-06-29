@@ -78,3 +78,27 @@
     margin-right: 0;
   }
 }
+@supports selector(:has(*)) {
+  @media (min-width: 992px) {
+    /* Keep the page ToC rail visible on pages with margin notes. Without this,
+       Quarto can treat margin content as owning the margin sidebar and collapse
+       the ToC while scrolling through notes. */
+    body.docked #quarto-content.page-columns:has(.column-margin) {
+      --ash-page-toc-width: clamp(8rem, 12vw, 11rem);
+    }
+
+    body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar,
+    body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar #TOC,
+    body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar nav[role="doc-toc"] {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar {
+      grid-column: screen-start / body-start !important;
+      min-width: 0;
+      width: auto;
+    }
+  }
+}
