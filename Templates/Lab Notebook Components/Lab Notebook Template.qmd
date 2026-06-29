@@ -2,7 +2,7 @@
 wh---
 title: "Lab Notebook Template"
 subtitle: "A subtitle for your project."
-author: "Your Name Here"
+author: "Firstname Lastname"
 
 # -- Page behavior --
 toc: true
