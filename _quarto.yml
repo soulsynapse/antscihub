@@ -9,8 +9,8 @@ website:
 
   # Navigation
   page-navigation: true       # prev/next links at bottom of pages
-  back-to-top-navigation: true
-  bread-crumbs: true           # shows path breadcrumbs above title
+  back-to-top-navigation: false
+  bread-crumbs: false            # show page hierarchy in the header
 
   sidebar:
     style: floating
@@ -47,7 +47,7 @@ format:
     # Wider body (default is 700px)
     grid:
       body-width: 950px
-      margin-width: 350px
+      margin-width: 250px
 
     # Code
     code-fold: true            # collapse code blocks by default, click to expand
