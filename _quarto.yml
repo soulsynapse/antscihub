@@ -29,7 +29,7 @@ website:
         contents: lab-notebooks/*.qmd
       - section: "Templates"
         contents:
-          - "Templates/Lab Notebook Components/Lab Notebook Template.qmd"
+          - "Templates/Research Project Components/Research Project Template.qmd"
 
   # Footer
   page-footer:

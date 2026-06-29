@@ -1,6 +1,6 @@
 ```{=html}
 <!-- 
-  Lab Notebook Overview Component
+  Research Project Overview Component
   Structure based on Booth et al. (2016), The Craft of Research, 4th ed.
   Sections follow the book's progression: Interest → Topic → Questions → Significance → Problem → Hypothesis → Sources
 -->

@@ -1,5 +1,5 @@
 ---
-title: "Lab Notebook Template"
+title: "Research Project Template"
 subtitle: "A subtitle for your project."
 author: "Firstname Lastname"
 
@@ -218,7 +218,7 @@ Reference specific video observations inline:
 ::: {.callout-note collapse="true"}
 ## Reproducibility Info
 
-**Source:** [`Lab Notebook Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Lab%20Notebook%20Components/Lab%20Notebook%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
+**Source:** [`Research Project Template.qmd`](https://github.com/soulsynapse/antscihub/blob/main/Templates/Research%20Project%20Components/Research%20Project%20Template.qmd) \| **Render path:** GitHub Actions builds and deploys the site from `main`
 :::
 
 ## References {.unnumbered}
