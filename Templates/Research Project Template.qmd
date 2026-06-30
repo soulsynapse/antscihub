@@ -36,7 +36,7 @@ lightbox: true
 -->
 ```
 
-### 1. Research Interest
+### Research Interest
 
 ::: {.callout-note collapse="true" title="What is a research interest?"}
 A research interest is the raw starting material for a project. This is the thing you're curious about *before* you've scoped/focused/formalized it. This is not a claim, a question, or a study proposal. You are identifying the **itch**. The fascination. The puzzle. The nagging observation that makes you want to know more.
@@ -52,10 +52,10 @@ From Booth et al.: "a research topic is an interest stated specifically enough f
 
 <!-- Write your research interest here -->
 
-### 2. Broad Research Topic
+### Broad Research Topic
 
 ::: {.callout-note collapse="true" title="What is a broad research topic?"}
-A broad research topic takes your interest and names a domain of inquiry. You are naming the process or the system by which your interest is understood. At this stage, you can state your topic in four or five words: "division of labor in ants," "the evolution of cooperation," "gene regulation in development." Booth et al. warn that a topic this broad will "intimidate you with the task of finding, much less reading, even a fraction of the sources available." That's normal.
+A broad research topic takes your interest and names a **domain of inquiry**. You are naming the process or the system by which your interest is understood. At this stage, you can state your topic in four or five words: "division of labor in ants," "the evolution of cooperation," "gene regulation in development." Booth et al. warn that a topic this broad will "intimidate you with the task of finding, much less reading, even a fraction of the sources available." That's normal.
 
 The purpose of writing it down explicitly is diagnostic: if your topic is this broad, you know you haven't focused yet, and you can see what work remains. A broad topic is a *starting place* (the word "topic" comes from *topos*, Greek for "place"), not a destination. You will head off from here in a particular direction.
 
@@ -296,7 +296,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-Example of cross-reference: the growth trajectories in @fig-growth-trajectories suggest treatment effects on asymptotic size.
+Example of cross-reference: the growth trajectories in @fig-growth-trajectories suggest treatment effects on asymptotic size. Bear in mind
 
 ### Inline Computed Values
 
