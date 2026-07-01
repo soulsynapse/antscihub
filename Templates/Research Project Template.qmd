@@ -57,7 +57,7 @@ Many researchers have more interests than they can pursue; the challenge is not 
 ### 2. Research Topic
 
 ::: {.callout-note collapse="true" title="What is a research topic?"}
-A research topic is what you are investigating. If you look at most biology papers, you will likely see a phrase towards the end of the introduction that reads:
+A research topic is **what you are investigating.** If you look at most biology papers, you will likely see a phrase towards the end of the introduction that reads:
 
 1.  **Topic**: We \[studied/investigated\] \_\_\_\_\_\_\_\_\_\_
 2.  **Question**: To find out who/what/when/where/whether/why/how \_\_\_\_\_\_\_\_\_\_
@@ -65,7 +65,7 @@ A research topic is what you are investigating. If you look at most biology pape
 
 You should probably highlight this in Zotero when you see it, because it is a key part of the research process. Keep this in mind for the other sections, but for now, we just want the topic.
 
-A well-scoped research topic defines what you could imagine being an expert on. If someone said they are studying a topic, could you reasonably imagine them being a local expert on that topic?
+A well-scoped research topic defines what you could become an authoritative expert on. If someone said they are studying a topic, could you reasonably imagine them being a local expert on that topic? If you can't because the topic is too broad, then how could they possibly know enough to speak to it authoritatively? Having a focused research topic is central to the scientific process: without a well scoped topic, the project will likely feel infeasible to you and implausible to your readers.
 
 *(Booth et al. 2016, §3.2)*
 :::
@@ -75,7 +75,7 @@ You narrow a broad topic into a focused one by adding words derived from **verbs
 
 Notice what we are doing: we started with **something interesting**, moved to **specific domains** where the story can live, and now we are asking **within that domain, who are the actors?** We are picking a few focused components within one domain and **asking how they interact**.
 
-Booth et al. offer a useful test: **restate your focused topic as a full sentence.** If that sentence makes a claim a reader might find interesting (even if thin at this stage) you have a viable topic.
+Booth et al. offer a useful test: restate your focused topic as a full sentence. **If that sentence makes a claim a reader might find interesting, you have a viable topic.**
 
 **How to focus:**
 
@@ -91,7 +91,7 @@ Booth et al. offer a useful test: **restate your focused topic as a full sentenc
 ### 3. Research Questions
 
 ::: {.callout-note collapse="true" title="How to generate and evaluate research questions"}
-The best way to begin working on a focused topic is **not** to find all the information you can, but to formulate questions that direct you to just the information you need. Without a specific question worth asking, you cannot offer a specific answer worth supporting, and without an answer to support, you cannot select from all available data just those relevant to your case.
+The best way to begin working on a focused topic is **not** to find all the information you can, but to formulate questions that direct you to just the information you need. Without a specific question worth asking, you cannot offer a specific answer worth supporting, and without an answer to support, you cannot select the data relevant to your case.
 
 #### Systematic question generation
 
@@ -119,7 +119,7 @@ Look for questions whose answers would make you think about the topic in a **new
 
 <!-- Write your research questions here -->
 
-### 4. Significance ("So What?")
+### 4. Significance
 
 ::: {.callout-note collapse="true" title="Why this is the pivotal section"}
 This is the most important section. Beyond your own interest in its answer, why would others think it a question worth asking? Say you have the answer. Given that answer, how would you respond to the question "**So what?**"
