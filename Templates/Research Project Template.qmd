@@ -36,37 +36,39 @@ lightbox: true
 -->
 ```
 
-### Research Interest
+### 1. Research Interest
 
 ::: {.callout-note collapse="true" title="What is a research interest?"}
 A research interest is the raw starting material for a project. This is the thing you're curious about *before* you've scoped/focused/formalized it. This is not a claim, a question, or a study proposal. You are identifying the **itch**. The fascination. The puzzle. The nagging observation that makes you want to know more.
 
-From Booth et al.: "a research topic is an interest stated specifically enough for you to imagine becoming a local expert on it." The research interest comes **before** that. It is the broader domain of fascination from which a topic will be carved. Many researchers have more interests than they can pursue; the challenge is not generating them but selecting among them.
+Many researchers have more interests than they can pursue; the challenge is not generating them but selecting among them.
 
 **Good interests often start as:** things you find yourself explaining to others unprompted, phenomena that don't fit the explanations you've been taught, patterns you notice across systems, questions that keep recurring across your reading, or observations from your own empirical work that surprise you.
 
-**Write your interest as a simple declarative statement of fascination, not a research question.** Example: "I'm fascinated by how individual ants with tiny brains collectively solve problems that seem to require centralized intelligence." Not yet: "How do ant colonies make decisions?" which comes later.
+**Write your interests as a simple declarative statements of fascination, not research questions.** Example: "I'm fascinated by how individual ants with tiny brains collectively solve problems that seem to require centralized intelligence." Not yet: "How do ant colonies make decisions?" which comes later. Among and between your research projects, you can refine them.
+
+**Note:** Your research interests generally won't make it into the paper. The purpose is to help ground you in what you care about. It is useful for almost every aspect of science (conference and other talks, science communication, elevator stories, interviews, teaching, academic CV) *except* most research products. This is a specific narrative product, and it is good to keep it in mind.
 
 *(Booth et al. 2016, §3.1)*
 :::
 
 <!-- Write your research interest here -->
 
-### Broad Research Topic
+### 2. Research Topic
 
-::: {.callout-note collapse="true" title="What is a broad research topic?"}
-A broad research topic takes your interest and names a **domain of inquiry**. You are naming the process or the system by which your interest is understood. At this stage, you can state your topic in four or five words: "division of labor in ants," "the evolution of cooperation," "gene regulation in development." Booth et al. warn that a topic this broad will "intimidate you with the task of finding, much less reading, even a fraction of the sources available." That's normal.
+::: {.callout-note collapse="true" title="What is a research topic?"}
+A research topic is what you are investigating. If you look at most biology papers, you will likely see a phrase towards the end of the introduction that reads:
 
-The purpose of writing it down explicitly is diagnostic: if your topic is this broad, you know you haven't focused yet, and you can see what work remains. A broad topic is a *starting place* (the word "topic" comes from *topos*, Greek for "place"), not a destination. You will head off from here in a particular direction.
+1.  **Topic**: We \[studied/investigated\] \_\_\_\_\_\_\_\_\_\_
+2.  **Question**: To find out who/what/when/where/whether/why/how \_\_\_\_\_\_\_\_\_\_
+3.  **Significance**: In order to understand \_\_\_\_\_\_\_\_\_\_.
 
-By narrowing down the process or systems that specifically influence your research interest, you are able to take one step closer to causal questions. I recommend stating as many as you can that qualify, and picking one in particular for *this* project.
+You should probably highlight this in Zotero when you see it, because it is a key part of the research process. Keep this in mind for the other sections, but for now, we just want the topic.
+
+A well-scoped research topic defines what you could imagine being an expert on. If someone said they are studying a topic, could you reasonably imagine them being a local expert on that topic?
 
 *(Booth et al. 2016, §3.2)*
 :::
-
-<!-- Write your broad topic here -->
-
-### Focused Research Topic
 
 ::: {.callout-note collapse="true" title="What is a focused research topic?"}
 You narrow a broad topic into a focused one by adding words derived from **verbs that express actions or relationships**: *conflict*, *influence*, *cause*, *contribute*, *change*, *develop*, *shape*, *constrain*. A static topic ("caste determination in ants") becomes a focused one when it contains dynamic, relational language ("the *influence* of queen presence on larval developmental *trajectories* during the 3rd-instar commitment window in *Temnothorax*").
@@ -86,7 +88,7 @@ Booth et al. offer a useful test: **restate your focused topic as a full sentenc
 
 <!-- Write your focused topic here -->
 
-### Research Questions
+### 3. Research Questions
 
 ::: {.callout-note collapse="true" title="How to generate and evaluate research questions"}
 The best way to begin working on a focused topic is **not** to find all the information you can, but to formulate questions that direct you to just the information you need. Without a specific question worth asking, you cannot offer a specific answer worth supporting, and without an answer to support, you cannot select from all available data just those relevant to your case.
@@ -117,7 +119,7 @@ Look for questions whose answers would make you think about the topic in a **new
 
 <!-- Write your research questions here -->
 
-### Significance ("So What?")
+### 4. Significance ("So What?")
 
 ::: {.callout-note collapse="true" title="Why this is the pivotal section"}
 This is the most important section. Beyond your own interest in its answer, why would others think it a question worth asking? Say you have the answer. Given that answer, how would you respond to the question "**So what?**"
@@ -147,7 +149,7 @@ Think of it this way: *What will be lost if you don't answer your question?* How
 
 **Step 3 — Significance:** ... in order to help my reader understand ...
 
-### Problem Structure
+### 5. Problem Structure
 
 ::: {.callout-note collapse="true" title="Transforming a question into a research problem"}
 A question becomes a research *problem* when you can articulate not just what you don't know, but what **consequence** that ignorance has. What are the larger, more important questions you can't answer because of this gap? Booth et al. define every problem as having two parts:
@@ -186,7 +188,7 @@ If the answer is "probably not," the practical connection is a stretch. Present 
 
 **If applied — Step 4 (Practical application):**
 
-### Working Hypothesis / Elevator Story
+### 6. Working Hypothesis / Elevator Story
 
 ::: {.callout-note collapse="true" title="Why you need a working answer before you have all the evidence"}
 An "elevator story" is a short summary of your project that you could give someone on the way to a meeting. It should include: (1) your research question, (2) your best guess at an answer, and (3) the kind of evidence you expect to use to support it.
@@ -206,7 +208,7 @@ Research isn't a beeline to the answer: "it's more like zigzagging up and down a
 
 <!-- Write your working hypothesis / elevator story here, or create a separate file and embed it -->
 
-### Sources & Problem-Finding
+### 7. Sources & Problem-Finding
 
 ::: {.callout-note collapse="true" title="How to engage sources at the overview stage"}
 At this stage, you are **not** conducting a comprehensive literature review. You are reading to accomplish two things: (1) find and refine your research problem, and (2) identify the kinds of evidence your readers will expect.
