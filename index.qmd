@@ -13,15 +13,9 @@ listing:
 
 Welcome to AntSciHub v4
 
-Currently trying this out as a pilot for a lab notebook setup. Please excuse the dust 🏗️
+Very much WIP. Please excuse the dust 🏗️
 
-## Research Projects/
-
-## Resources
-
-## Tools
-
-TODO: Write up on general philosophy towards *specific* tools.
+{{< include front-page/_what-is-antscihub.qmd >}}
 
 ## Templates
 
