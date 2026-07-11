@@ -15,6 +15,8 @@ Welcome to AntSciHub v4
 
 Very much WIP. Please excuse the dust 🏗️
 
+## What is AntSciHub?
+
 {{< include front-page/_what-is-antscihub.qmd >}}
 
 ## Templates
